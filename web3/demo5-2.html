@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3.产品中心-详情页 -(1)</title>
+    <style type="text/css">
+    *{
+        padding:0;
+        margin:0;
+    }
+    ul,li,ol{
+        list-style:none;
+    }
+    a{
+        text-decoration:none;
+    }
+    .header{
+        width:1200px;
+        height:155px;
+        margin: 0 auto;
+    }
+    .first{
+        width:1200px;
+        height:105px;
+    }
+    .logo{
+        width:705px;
+        height:75px;
+        padding-top:30px;
+        float: left;
+    }
+    .dianhua{
+        height:52px;
+        width:230px;
+        padding-top:53px;
+        float: left;
+    }
+    .dianhua p{ 
+        font-size: 22px;
+        color:#0b4199;
+    }
+    .zhongwen{
+        height:49px;
+        width:265px;
+        padding-top:56px;
+        float: left;
+    }
+    .biaodan{
+        font-family: "微软雅黑";
+        float: left;
+        height:17px;
+        padding:0 10px;
+        border-right:1px solid black;
+        color:#7d7d7d;
+    }
+     .biaodan1{
+        font-family: "微软雅黑";
+        float: left;
+        height:14px;
+        padding:0 8px;
+        color:#7d7d7d;
+    }
+    .lag{
+        font-family: "微软雅黑";
+        float: left;
+        height:14px;
+        width:50px;
+        color:#7d7d7d;
+    }
+    .lag2{
+        font-family: "微软雅黑";
+        float: left;
+        height:14px;
+        width:90px;
+        color:red;
+    }
+    .last{
+        width:1200px;
+        height:50px;
+    }
+    .last1{
+        font-family: "微软雅黑";
+        height:33px;
+        width:80px;
+        font-size: 16px;
+        float:left;
+        margin-right:37px;
+        padding-top: 13px;
+        padding-left:2px;
+    }
+    .last2{
+        font-family: "微软雅黑";
+        height:33px;
+        width:73px;
+        font-size: 16px;
+        float:left;
+        margin-right:37px;
+        background-color:#2756a4;
+        padding-top: 13px;
+        padding-left:7px;
+    }
+    .last3{
+        font-family: "微软雅黑";
+        height:33px;
+        width:80px;
+        font-size: 16px;
+        float:left;
+        margin-right:28px;
+        padding-top: 13px;
+    }
+    .img1{
+        width:223px;
+        height:50px;
+        float:left;
+    }
+    #t1{
+        background:url(img/25.png) no-repeat 220px center;
+        background-color:#ebeaea;
+    }
+    select{
+        border:0;
+        color: red;
+        background: none;
+    }
+    span{
+        font-family: "微软雅黑";
+    }
+     .zhuye{
+        height:840px;
+        width:100%;
+        background-color:#f9f9f9;
+    }
+    .box1{
+        height:80px;
+        width:1200px;
+        padding-top: 20px;
+        margin:0 auto;
+    }
+    .box2{
+        height:70px;
+        width:1200px;
+        border-bottom:1px dotted black;
+        margin:0 auto;
+    }
+    .ji{
+        padding-top: 7px;
+    }
+    .jd1{
+        padding-left: 1060px;
+        float:left;
+    }
+    .jd2{
+        padding-left:5px;
+        float:left;
+    }
+    .box3{
+        height:600px;
+        width:1200px;
+        margin:0 auto;
+        margin-top:60px;
+    }
+    .beijing{
+        height:40px;
+        width:1200px;
+        background: url(img/9.png) no-repeat center center;
+    }
+    .cuo1{
+        float:left;
+        margin-left: 60px;
+        font-family: "微软雅黑";
+        margin-top: 9px;
+        font-size: 14px;
+    }
+    .cuo2{
+        float:left;
+        margin-left: 58px;
+        font-family: "微软雅黑";
+        margin-top: 9px;
+        font-size: 14px;
+    }
+    .cuo3{
+        float:left;
+        margin-left: 60px;
+        font-family: "微软雅黑";
+        margin-top: 9px;
+        font-size: 14px;
+    }
+    .cuo4{
+        float:left;
+        margin-left: 60px;
+        font-family: "微软雅黑";
+        margin-top: 9px;
+        font-size: 14px;
+    }
+    .zong{
+        height:570px;
+        width:1200px;
+        background-color: white;
+    }
+    .shiyong{
+        height:570px;
+        width:1140px;
+        margin:0 auto;
+    }
+    .shi{
+        height:570px;
+        width:680px;
+        float:left;
+    }
+    .yong{
+        height:550px;
+        width:460px;
+        background-color:white;
+        float:left;
+    }
+    .cl1{
+        height:400px;
+        width:680px;
+    }
+    .cl2{
+        height:100px;
+        width:680px;
+        background-color:#f2f2f2;
+    }
+    .cl3{
+        height:70px;
+        width:680px;
+    }
+    .do1{
+        padding-top: 180px;
+        padding-left: 15px;
+        float:left;
+    }
+    .do2{
+        padding-top: 110px;
+        padding-left: 60px;
+        float:left;
+    }
+    .do3{
+        padding-top: 180px;
+        padding-left:60px;
+        float:left;
+    }
+    .tan1{
+        height:10px;
+        width:32px;
+        border:1px solid blue;
+        border-radius: 5px;
+        float:left;
+        margin-top: 25px;
+        margin-left: 280px;
+        background: blue;
+    }
+    .tan2{
+        height:10px;
+        width:32px;
+        border:1px solid blue;
+        border-radius: 5px;
+        float:left;
+        margin-top: 25px;
+        margin-left:12px;
+        background: white;
+    }
+    .pict1{
+        height:100px;
+        width:160px;
+        margin-left: 40px;
+        float:left;
+    }
+    .pict2{
+        height:100px;
+        width:115px;
+        margin-left: 90px;
+        float:left;
+    }
+    .pict3{
+        height:100px;
+        width:130px;
+        margin-left:95px;
+        float:left;
+    }
+    .xinhao{
+        height:75px;
+        width:435px;
+        padding-top: 55px;
+        padding-left: 25px;
+    }
+    .xinhao p{
+        font-size: 24px;
+        font-family: "微软雅黑";
+    }
+    .av{
+        height:270px;
+        width:435px;
+        padding-left: 25px;
+    }
+    .av p{
+        font-size: 15px;
+        font-family: "微软雅黑";
+        line-height: 28px;
+    }
+    .bu1{
+        height:49px;
+        width:435px;
+        padding-left: 25px;
+        margin-bottom: 2px;
+    }
+    .bu2{
+        height:49px;
+        width:435px;
+        padding-left: 25px;
+    }
+    .bu1 button{
+        height:49px;
+        width:230px;
+        border:1px solid blue;
+        background: #2756a4;
+        font-size: 16px;
+        color:white;
+        font-family: "微软雅黑";
+        font-weight:600;
+        margin-left: 205px;
+        border-radius: 15px;
+    }
+    .bu2 button{
+        height:49px;
+        width:230px;
+        border:1px solid blue;
+        background: #2756a4;
+        font-size: 16px;
+        color:white;
+        font-family: "微软雅黑";
+        font-weight:600;
+        margin-left: 205px;
+        border-radius: 15px;
+    }
+    .zhuti{
+        height:980px;
+        width:100%;
+        background-color:#f9f9f9;
+    }
+    .gongneng{
+        height:976px;
+        width:1200px;
+        border-top:4px solid black;
+        margin:0 auto;
+        background-color:white;
+    }
+    .tedian{
+        height:360px;
+        width:1140px;
+        border-bottom:1px solid black;
+        margin:0 auto;
+    }
+    .gong{
+        height:45px;
+        width:1140px;
+        padding-top:30px;
+    }
+    .kuan1{
+        height:90px;
+        width:1140px;
+    }
+    .top{
+        float:left;
+        margin-right:39px;
+        font-family: "微软雅黑";
+    }
+    .bo{
+        float:left;
+        margin-right:150px;
+        font-family: "微软雅黑";
+        margin-top: 20px;
+    }
+    .kuan2{
+        height:195px;
+        width:1140px;
+    }
+    .zuida{
+        height:150px;
+        width:1140px;
+        border-bottom:1px solid black;
+        margin:0 auto;
+        padding-top: 30px;
+    }
+    .nor{
+        font-size: 16px;
+        font-family: "微软雅黑";
+        margin-bottom: 12px;
+    }
+    .bold{
+        font-size: 16px;
+        font-family: "微软雅黑";
+        margin-bottom: 12px;
+        font-weight:600;
+    }
+    .youliang{
+        height:380px;
+        width:1140px;
+        margin:0 auto;
+        padding-top: 30px;
+    }
+    .ha1{
+        height:380px;
+        width:570px;
+        float: left;
+    }
+    .ha2{
+        height:380px;
+        width:480px;
+        padding-left:90px;
+        float:left;
+    }
+    .ha3{
+        height:25px;
+        width:1140px;
+        margin:0 auto;
+        background:url(img/26.png) no-repeat center center;
+    }
+    .fp{
+        padding-top:7px;
+        padding-left:550px;
+    }
+    .zhuti2{
+        height:340px;
+        width:100%;
+        background-color:#f9f9f9;
+    }
+    .dianxing{
+        height:336px;
+        width:1200px;
+        border-top:4px solid black;
+        margin:0 auto;
+        background-color:white;
+    }
+    .yingyong{
+        height:336px;
+        width:1140px;
+        margin:0 auto;
+    }
+    .dian{
+        height:65px;
+        width:1140px;
+        padding-top:30px;
+    }
+    .kuan3{
+        height:216px;
+        width:1090px;
+    }
+    .ha4{
+        height:25px;
+        width:1140px;
+        margin:0 auto;
+        background:url(img/26.png) no-repeat center center;
+    }
+    .ping li{
+        font-size: 16px;
+        font-family: "微软雅黑";
+        margin-bottom: 12px;
+    }
+    .zhuti3{
+        height:394px;
+        width:100%;
+        background-color:#f9f9f9;
+    }
+    .xiangguan{
+        height:390px;
+        width:1200px;
+        border-top:4px solid black;
+        margin:0 auto;
+        background-color:white;
+    }
+    .chanpin{
+        height:390px;
+        width:1140px;
+        margin:0 auto;
+    }
+    .xiang{
+        height:40px;
+        width:1140px;
+        padding-top:70px;
+    }
+    .pic{
+        height:280px;
+        width:1140px;
+    }
+    .pic1{
+        width:296px;
+        height:200px;
+        border:2px solid #c9c9c9;
+        margin-right: 120px;
+        float:left;
+    }
+    .pic2{
+        width:296px;
+        height:200px;
+        border:2px solid #c9c9c9;
+        margin-right: 120px;
+        float:left;
+    }
+    .pic3{
+        width:296px;
+        height:200px;
+        border:2px solid #c9c9c9;
+        float:left;
+    }
+    .pi1{
+        width:296px;
+        height:120px;
+    }
+    .pic1 p{
+        text-align: center;
+        margin-top: 13px;
+        font-family: "微软雅黑";
+        font-size: 15px;
+    }
+    .pic2 p{
+        text-align: center;
+        margin-top: 13px;
+        font-family: "微软雅黑";
+        font-size: 15px;
+    }
+    .pic3 p{
+        text-align: center;
+        margin-top: 13px;
+        font-family: "微软雅黑";
+        font-size: 15px;
+    }
+    .zhuti4{
+        height:310px;
+        width:100%;
+        background-color:#f9f9f9;
+    }
+    .shendu{
+        height:250px;
+        width:1200px;
+        margin:0 auto;
+        background-color:white;
+    }
+    .third{width:100%;height:60px;background-color:#0b4199;}
+    .partthree{width:1200px;height:60px;margin:0 auto;}
+    .imgfive{margin-top:17px;float:left;}
+    .p10{margin-left:10px;margin-top:25px;color:#ffffff;float:left;}
+    .imgsix{margin-left:160px;margin-top:17px;float:left;}
+    .p11{margin-left:10px;margin-top:25px;color:#ffffff;float:left;}
+    .p12{float:left;color:#ffffff;margin-top:25px;margin-left:508px;}
+    .imgseven{margin-top:17px;float:left;margin-left: 6px;}
+    .imgeight{margin-top:17px;float:left;margin-left: 7px;}
+    .imgnine{margin-top:17px;float:left;margin-left: 7px;}
+
+
+
+    .g{height:310px;width:100%;background-color:#454545;}
+    .h{height:310px;width:1200px;margin:0 auto;}
+    .l{height:280px;overflow:hidden;float:left;}
+    .l>ul{margin-top:60px;width:175px;float:left;height:160px;}
+    .l>ul p{font-size:16px;color:#eeeded;;}
+    .l>ul li{font-size:14px;line-height:15px;margin-top:20px;color:#eeeded;}
+    .linelast{width:2px;height:200px;background-color:#525252;float:left;margin-top:40px;}
+    .m{margin-left:35px;overflow:hidden;}
+    .image3{margin-top:35px;margin-left:35px;}
+    .m p{font-size:14px;margin-top:10px;padding-left:35px;color:#eeeded;}
+    .n{margin-top:5px;height:25px;float:left;}
+    .n p{font-size:12px;color:#dad6d6;float:left;}
+    .zuihouline{width:2px;height:15px;background-color:#8d8d8d;margin-left:8px;float:left;}
+
+
+
+    .zai{
+        position:fixed;
+        right:80px;
+        top:300px;
+        height:336px;
+        width:84px;
+    }
+    .you1{
+        height:84px;
+        width:84px;
+        background-color: #8d8d8d;
+    }
+    .you2{
+        height:84px;
+        width:84px;
+        background-color: #b0b0b0;
+    }
+    .you3{
+        height:84px;
+        width:84px;
+        background-color: #b0b0b0;
+    }
+    .you4{
+        height:64px;
+        width:84px;
+        background-color: #b0b0b0;
+    }
+    .you5{
+        height:20px;
+        width:84px;
+        background-color: #a4a4a4;
+    }
+    .wan1{
+        padding-top: 15px;
+        margin-left: 18px;
+    }
+    .wan2{
+        padding-left: 6px;
+    }
+    .wan3{
+        margin-right:10px;
+    }
+    .wan4{
+        padding-top: 30px;
+        margin-left: 25px;
+    }
+    .wan5{
+        padding-left: 8px;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="first">
+            <div class="logo">
+                <img src="img/24.png">
+            </div>
+            <div class="dianhua">
+                <p><a href="">电话：800-8687-041</a></p>
+            </div>
+            <div class="zhongwen">
+                <ul>
+                    <li class="biaodan">
+                        <div class="lag">
+                            <p>中文</p>
+                        </div>
+                        <div class="lag2">
+                            <select>
+                                <option>
+                            Language
+                                </option>
+                            </select>
+                        </div>
+                    </li>
+                    <li class="biaodan"><a href=""><font color="black">登陆</font></a></li>
+                    <li class="biaodan1"><a href=""><font color="black">注册</font></a></li>
+                </ul>
+            </div>
+        </div>
+        <ul class="last">
+           <li class="last3"><a href=""><font color="black">首页</font></a></li>
+            <li class="last2"><a href=""><font color="white">产品中心</font></a></li>
+            <li class="last1"><a href=""><font color="black">技术支持</font></a></li>
+            <li class="last1"><a href=""><font color="black">解决方案</font></a></li>
+            <li class="last1"><a href=""><font color="black">计量和服务</font></a></li>
+            <li class="last1"><a href=""><font color="black">新闻中心</font></a></li>
+            <li class="last1"><a href=""><font color="black">访问论坛</font></a></li>
+            <li class="last1"><a href=""><font color="black">关于我们</font></a></li>
+            <li class="img1"><input type="" name="搜索" style="height: 37px;width: 254px;border:0;outline-style: none; padding-left:16px;font-size: 16px;font-family: "微软雅黑";" placeholder="搜索" id=t1></li>
+        </ul>
+
+    </div>
+    <div class="zhuye">
+        <div class="box1">
+            <span>主页 > 产品中心 > 微波/毫米波测量仪器 > 信号与频谱分析仪 > </span>
+            <span style="color:#2756a4"><a href="">AV4051A/B/C/D/E/F/G/H信号分析仪</a></span>
+        </div>
+        <div class="box2">
+            <span style="font-size: 24px;">AV4051A/B/C/D/E/F/G/H信号分析仪</span></br>
+            <div class="ji">
+                <div class="jd1"><a href=""><img src="img/32.png"></a></div>
+                <div class="jd2"><a href=""><img src="img/33.png"></a></div>
+                <div class="jd2"><a href=""><img src="img/34.png"></a></div>
+                <div class="jd2"><a href=""><img src="img/35.png"></a></div>
+                <div class="jd2"><a href=""><img src="img/36.png"></a></div>
+            </div>
+        </div>
+            
+        <div class="box3">
+            <div class="beijing">
+                <ul>
+                    <li class="cuo1"><a href="" style="color:white">产品概述</a></li>
+                    <li class="cuo2"><a href="" style="color:white">技术指标</a></li>
+                    <li class="cuo3"><a href="" style="color:white">订购信息</a></li>
+                    <li class="cuo4"><a href="" style="color:white">资料库</a></li>
+                </ul>
+            </div>
+            <div class="zong">
+            <div class="shiyong">
+                <div class="shi">
+                    <div class="cl1">
+                        <div class="do1"><a href=""><img src="img/29.png"></a></div>
+                        <div class="do2"><a href=""><img src="img/30.png"></a></div>
+                        <div class="do3"><a href=""><img src="img/31.png"></a></div>
+                    </div>
+                    <div class="cl2">
+                        <div class="pict1"><a href=""><img src="img/10.png"></a></div>
+                        <div class="pict2"><a href=""><img src="img/11.png"></a></div>
+                        <div class="pict3"><a href=""><img src="img/12.png"></a></div>
+                    </div>
+                    <div class="cl3">
+                        <button class="tan1"></button>
+                        <button class="tan2"></button>
+                        <button class="tan2"></button>
+                    </div>
+                </div>
+                <div class="yong">
+                    <div class="xinhao">
+                        <p>适用于复杂信号分析的信号/频谱分析仪</p>
+                    </div>
+                    <div class="av">
+                        <p>AV4051系列信号/频谱分析仪具有优良的测试动态范围、相位噪声、幅度精度和测试速度，具备高灵敏度频谱分析、符合标准的功率测量组件、IQ分析、瞬态分析、脉冲参数分析、音频分析、模拟调制测量、相位噪声测试等多种测试功能，可为您提供可靠的高性能测试服务。AV4051具有良好的扩展能力，可通过灵活配置选件进一步提升测试性能，也可通过各种数字和模拟信号输出接口构建测试系统或进行二次开发。可应用于航空、航天、雷达探测、通信、电子对抗、导航等领域的信号及设备测试。</p>
+                    </div>
+                    <div class="bu1">
+                        <button><a href="" style="font-size: 16px;color:white;font-weight:600;font-family:"微软雅黑";">索取报价</a></button>
+                    </div>
+                    <div class="bu2">
+                        <button><a href="" style="font-size: 16px;color:white;font-weight:600;font-family:"微软雅黑";">淘宝入口</a></button>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+<div class="zhuti">
+    <div class="gongneng">
+        <div class="tedian">
+            <div class="gong">
+                <span style="color:#2756a4;font-size: 22px;font-weight:600;"><a href="">功能特点</a></span>
+            </div>
+            <div class="kuan1">
+                <li class="top"><img src="img/4.png">宽频率覆盖范围</li>
+                <li class="top"><img src="img/4.png">最大200MHz分析带宽</li>
+                <li class="top"><img src="img/4.png">优良的测试接收性能</li>
+                <li class="top"><img src="img/4.png">全面的频谱分析能</li>
+                <li class="top"><img src="img/4.png">瞬态分析及信号回放</li>
+                <li class="top"><img src="img/4.png">丰富的功能选件</li>
+                <li class="bo"><img src="img/4.png">灵活的模拟和数字信号输出接口</li>
+                <li class="bo"><img src="img/4.png">便捷的操作特性</li>
+            </div>
+            <div class="kuan2">
+                <p class="bold">宽频率覆盖范围</p>
+                <p class="nor">最宽至50GHz的同轴频率覆盖范围</p>
+                <p class="nor">8种可选的频段配置，具备更好的经济性</p>
+                <p class="nor">可配置对应主机频段的宽频带前置放大器</p>
+                <p class="nor">具有到325GHz的外部频率扩展能力（外部频率扩展选件）</p>
+            </div>
+        </div>
+        <div class="zuida">
+            <p class="bold">最大200MHz分析带宽</p>
+            <p class="nor">提供10MHz（标配）、40MHz、200MHz等3种分析带宽配置方案</p>
+            <p class="nor">带宽可灵活选择，从10Hz至200MHz共40余档</p>
+            <p class="nor">根据带宽选择，无缝捕获时间可从1秒直至数小时</p>
+        </div>
+        <div class="youliang">
+            <div class="ha1">
+                <p class="bold">优良的测试接收性能</p>
+                <p class="nor">1GHz测量灵敏度-153dBm/Hz，配置前放后典型值为-167dBm/Hz</p>
+                <p class="nor">50GHz测量灵敏度-133dBm/Hz，配置前放后典型值为-151dBm/Hz</p>
+                <p class="nor">全数字中频设计，优异的刻度保真度和中频误差</p>
+            </div>
+            <div class="ha2">
+                <img src="img/2.png">
+            </div>
+        </div>
+        <div class="ha3"><div class="fp"><a href=""><font style="color:white;font-size: 16px;margin-right:5px;">收起</font><img src="img/28.png"></a></div></div>
+    </div>
+</div>
+
+<div class="zhuti2">
+    <div class="dianxing">
+        <div class="yingyong">
+            <div class="dian">
+                <span style="color:#2756a4;font-size: 22px;font-weight:600;"><a href="">典型应用</a></span>
+            </div>
+            <div class="kuan3">
+                <ul class="ping">
+                    <li><img src="img/5.jpg">电子系统性能综合评估：作为多用途多功能的通用信号及频谱分析仪表，AV4051可广泛应用于雷达、通信等电子系统综合性能评估中，为宽带信号的测</li>
+                    <li>试提供高灵敏度、大动态范围、高精度、高效率的解决方案。</li>
+                    <li><img src="img/5.jpg">发射机和接收机测试和诊断：应用AV4051提供的频谱分析、谱功率测试、瞬态分析、相噪测试等丰富的功能，为发射机和接收机测试提供全面的诊断服</li>
+                    <li>务。</li>
+                    <li><img src="img/5.jpg">直接用于复杂测试诊断系统的集成，为系统提供信号输出、数据输出和结果分析。</li>
+                </ul>
+            </div>
+            <div class="ha4"><div class="fp"><a href=""><font style="color:white;font-size: 16px;margin-right:5px;">展开</font><img src="img/28.png"></a></div></div>
+        </div>
+    </div>
+</div>
+
+<div class="zhuti3">
+    <div class="xiangguan">
+        <div class="chanpin">
+            <div class="xiang">
+                <span style="color:black;font-size: 22px;">相关产品</span>
+            </div>
+            <div class="pic">
+                <div class="pic1">
+                    <div class="pi">
+                        <img src="img/5.png">
+                    </div>
+                    <p>AV4033高性能频谱分析仪</p>
+                    <p><a href="">查看详情</a></p>
+                </div>
+                <div class="pic2">
+                    <div class="pi">
+                        <img src="img/6.png">
+                    </div>
+                    <p>AV82407毫米波扩频模块</p>
+                    <p><a href="">查看详情</a></p>
+                </div>
+                <div class="pic3">
+                    <div class="pi">
+                        <img src="img/7.png">
+                    </div>
+                    <p>AV3942A便携式场强测试仪</p>
+                    <p><a href="">查看详情</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="zhuti4">
+    <div class="shendu">
+        <img src="img/8.png">
+    </div>
+</div>
+
+<div class="third">
+            <div class="partthree">
+                <a href=""><img src="img/19.png" alt="" class="imgfive"></a>
+                <p class="p10"><a href="" style="color:white">800-8687-041</a></p>
+                <a href=""><img src="img/20.png" alt="" class="imgsix"></a>
+                <p class="p11"><a href="" style="color:white">中电仪器技术论坛</a></p>
+                <p class="p12">其他链接：</p>
+                <a href=""><img src="img/21.png" alt="" class="imgseven"></a>
+                <a href=""><img src="img/22.png" alt="" class="imgeight"></a>
+                <a href=""><img src="img/23.png" alt="" class="imgnine"></a>
+            </div>
+        </div>
+
+
+<div class="g">
+        <div class="h">
+            <div class="l">
+                <ul>
+                    <p>关于中电仪器</p>
+                    <li>新闻中心</a></li>
+                    <li>公司简介</li>
+                    <li>工作机会</li>
+                </ul>
+                <ul>
+                    <p>采购指南</p>
+                    <li>如何购买</li>
+                    <li>索取报价</li>
+                    <li>查看特价优惠</li>
+                    <li>代理合作</li>
+                </ul>
+                <ul>
+                    <p>技术支持</p>
+                    <li>查找手册</li>
+                    <li>更新固化软件/软件</li>
+                    <li>访问论坛</li>
+                    <li>联系我们</li>
+                </ul>
+                <ul>
+                    <p>计量和服务</p>
+                    <li>计量校准</li>
+                    <li>仪器维修</li>
+                    <li>培训与教育</li>
+                </ul>
+                <ul>
+                    <p>公司链接</p>
+                    <li>中国电科第41所</li>
+                    <li>中国电科第40所</li>
+                    <li>依爱消防</li>
+                    <li>依爱通信</li>
+                    <li>兴仪电子</li>
+                </ul>
+            </div>
+            <div class="linelast">
+            </div>
+            <div class="m">
+                <img src="img/13.png" alt="" class="image3">
+                <p>中科电仪器仪表有限公司</p>
+                <p>青岛：地址：山东省青岛市黄岛区香江路98号</p>
+                <p style="margin-left:42.5px;">邮箱：eiqd@ei41.com</p>
+                <p>蚌埠：地址：安徽省蚌埠市华光大道726号</p>
+                <p style="margin-left:42.5px;">邮箱：eibb@ei41.com</p>
+            </div>
+            <div class="n">
+            <p style="margin-left: 105px;">www.cetcei.com 
+
+ 中电科仪器仪表有限公司</p>
+            <p style="margin-left:165px;">《中华人民共和国电信与信息服务业务经营许可证》编号：皖ICP备05003230</p>
+            <p style="margin-left:50px;">法律说明</p>
+            <div class="zuihouline">
+            </div>
+            <p style="margin-left:10px;">网站直播</p>
+            </div>
+        </div>
+    </div>
+
+
+<div class="zai">
+    <div class="you1">
+        <div class="wan1"><a href=""><img src="img/14.png"></a></div>
+        <div class="wan2"><a href="" style="color:white">在线交流</a></div>
+    </div>
+    <div class="you2">
+        <div class="wan1"><a href=""><img src="img/15.png"></a></div>
+        <div class="wan2"><a href="" style="color:white">联系电话</a></div>
+        <div class="wan3"><img src="img/16.png"></div>
+    </div>
+    <div class="you3">
+        <div class="wan1"><a href=""><img src="img/17.png"></a></div>
+        <div class="wan2"><a href="" style="color:white">关注微信</a></div>
+        <div class="wan3"><img src="img/16.png"></div>
+    </div>
+    <div class="you4">
+        <div class="wan4"><a href=""><img src="img/18.png"></a></div>
+    </div>
+    <div class="you5">
+        <div class="wan5"><a href="" style="color:#dad6d6;font-size:10px;"">BACK TO TOP</a></div>
+    </div>
+</div>
+
+
+
+</body>
+</html>

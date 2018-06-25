@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>1.产品中心-综合页</title>
+    <style type="text/css">
+    *{
+        padding:0;
+        margin:0;
+    }
+    ul,li,ol{
+        list-style:none;
+    }
+    a{
+        text-decoration:none;
+    }
+    .header{
+        width:1200px;
+        height:155px;
+        margin: 0 auto;
+    }
+    .first{
+        width:1200px;
+        height:105px;
+    }
+    .logo{
+        width:705px;
+        height:105px;
+        float: left;
+    }
+    .lo{
+        width:200px;
+        height:75px;
+        padding-top:34px;
+        float: left;
+    }
+    .go{
+        width:505px;
+        height:57px;
+        padding-top:42px;
+        float: left;
+    }
+    .dianhua{
+        height:52px;
+        width:230px;
+        padding-top:53px;
+        float: left;
+    }
+    .dianhua p{ 
+        font-size: 22px;
+        color:#0b4199;
+    }
+    .zhongwen{
+        height:49px;
+        width:265px;
+        padding-top:56px;
+        float: left;
+    }
+    .biaodan{
+        font-family: "微软雅黑";
+        float: left;
+        height:17px;
+        padding:0 10px;
+        border-right:1px solid black;
+        color:#7d7d7d;
+    }
+     .biaodan1{
+        font-family: "微软雅黑";
+        float: left;
+        height:14px;
+        padding:0 8px;
+        color:#7d7d7d;
+    }
+    .lag{
+        font-family: "微软雅黑";
+        float: left;
+        height:14px;
+        width:50px;
+        color:#7d7d7d;
+    }
+    .lag2{
+        font-family: "微软雅黑";
+        float: left;
+        height:14px;
+        width:90px;
+        color:red;
+    }
+    .last{
+        width:1200px;
+        height:50px;
+    }
+    .last1{
+        font-family: "微软雅黑";
+        height:33px;
+        width:80px;
+        font-size: 16px;
+        float:left;
+        margin-right:37px;
+        padding-top: 13px;
+        padding-left:2px;
+    }
+    .last2{
+        font-family: "微软雅黑";
+        height:33px;
+        width:73px;
+        font-size: 16px;
+        float:left;
+        margin-right:37px;
+        background-color:#2756a4;
+        padding-top: 13px;
+        padding-left:7px;
+    }
+    .last3{
+        font-family: "微软雅黑";
+        height:33px;
+        width:80px;
+        font-size: 16px;
+        float:left;
+        margin-right:28px;
+        padding-top: 13px;
+    }
+    .img1{
+        width:223px;
+        height:50px;
+        float:left;
+    }
+    #t1{
+        background:url(img/25.png) no-repeat 220px center;
+        background-color:#ebeaea;
+    }
+    select{
+        border:0;
+        color: red;
+        background: none;
+    }
+    span{
+        font-family: "微软雅黑";
+    }
+    .zhuye{
+        height:595px;
+        width:100%;
+        background-color:#f9f9f9;
+    }
+    .box1{
+        height:79px;
+        padding-top: 18px;
+        width:1200px;
+        margin:0 auto;
+    }
+    .box2{
+        height:68px;
+        width:1200px;
+        border-bottom:1px dotted black;
+        line-height: 30px;
+        margin:0 auto;
+    }
+    .box3{
+        height:248px;
+        width:1200px;
+        margin:0 auto;
+        padding-top: 22px;
+    }
+    .box4{
+        height:160px;
+        width:1180px;
+        margin:0 auto;
+    }
+    .zhongdian{
+        height:37px;
+        width:1180px;
+    }
+    .zhongdian p{
+        font-size: 21px;
+        color:blue;
+        font-family: "微软雅黑";
+    }
+    .neirong{
+        height:110px;
+        width:1180px;
+    }
+    .neirong p{
+        line-height: 28px;
+        color:#666666;
+        font-family: "微软雅黑";
+    }
+    .tupian{
+        height:1120px;
+        background-color:#f9f9f9;
+    }
+    .nan{
+        height:1120px;
+        width:1200px;
+        background-color:#f9f9f9;
+        margin: 0 auto;
+    }
+    .yes{
+        height:510px;
+        width:285px;
+        margin-right: 20px;
+        margin-bottom: 43px;
+        background-color: white;
+        float:left;
+    }
+    .no{
+        height:510px;
+        width:285px;
+        margin-bottom: 43px;
+        background-color: white;
+        float:left;
+    }
+    .pic1{
+        width:265px;
+        height:150px;
+        margin:15px 10px 20px 10px;
+    }
+    .yes p{
+        text-align: center;
+        margin-bottom: 14px;
+        color:#2756a4;
+        font-family: "微软雅黑";
+        font-size: 16px;
+    }
+     .no p{
+        text-align: center;
+        margin-bottom: 14px;
+        color:#2756a4;
+        font-family: "微软雅黑";
+        font-size: 16px;
+    }
+    .hap{
+        margin-left: 12px;
+    }
+    .hap li{
+        padding-top: 8px;
+        border-top: 1px dotted black;
+        padding-bottom: 8px;
+        font-family: "微软雅黑";
+        color:#2756a4;
+    }
+
+
+ .third{width:100%;height:60px;background-color:#0b4199;}
+    .partthree{width:1200px;height:60px;margin:0 auto;}
+    .imgfive{margin-top:17px;float:left;}
+    .p10{margin-left:10px;margin-top:25px;color:#ffffff;float:left;}
+    .imgsix{margin-left:160px;margin-top:17px;float:left;}
+    .p11{margin-left:10px;margin-top:25px;color:#ffffff;float:left;}
+    .p12{float:left;color:#ffffff;margin-top:25px;margin-left:508px;}
+    .imgseven{margin-top:17px;float:left;margin-left: 6px;}
+    .imgeight{margin-top:17px;float:left;margin-left: 7px;}
+    .imgnine{margin-top:17px;float:left;margin-left: 7px;}
+
+
+
+    .g{height:310px;width:100%;background-color:#454545;}
+    .h{height:310px;width:1200px;margin:0 auto;}
+    .l{height:280px;overflow:hidden;float:left;}
+    .l>ul{margin-top:60px;width:175px;float:left;height:160px;}
+    .l>ul p{font-size:16px;color:#eeeded;;}
+    .l>ul li{font-size:14px;line-height:15px;margin-top:20px;color:#eeeded;}
+    .linelast{width:2px;height:200px;background-color:#525252;float:left;margin-top:40px;}
+    .m{margin-left:35px;overflow:hidden;}
+    .image3{margin-top:35px;margin-left:35px;}
+    .m p{font-size:14px;margin-top:10px;padding-left:35px;color:#eeeded;}
+    .n{margin-top:5px;height:25px;float:left;}
+    .n p{font-size:12px;color:#dad6d6;float:left;}
+    .zuihouline{width:2px;height:15px;background-color:#8d8d8d;margin-left:8px;float:left;}
+
+
+
+    .zai{
+        position:fixed;
+        right:60px;
+        top:250px;
+        height:336px;
+        width:84px;
+    }
+    .you1{
+        height:84px;
+        width:84px;
+        background-color: #8d8d8d;
+    }
+    .you2{
+        height:84px;
+        width:84px;
+        background-color: #b0b0b0;
+    }
+    .you3{
+        height:84px;
+        width:84px;
+        background-color: #b0b0b0;
+    }
+    .you4{
+        height:64px;
+        width:84px;
+        background-color: #b0b0b0;
+    }
+    .you5{
+        height:20px;
+        width:84px;
+        background-color: #a4a4a4;
+    }
+    .wan1{
+        padding-top: 15px;
+        margin-left: 18px;
+    }
+    .wan2{
+        padding-left: 6px;
+    }
+    .wan3{
+        margin-right:10px;
+    }
+    .wan4{
+        padding-top: 30px;
+        margin-left: 25px;
+    }
+    .wan5{
+        padding-left: 6px;
+    }
+    </style>
+</head>
+
+<body>
+       <div class="header">
+        <div class="first">
+            <div class="logo">
+                <div class="lo"><img src="img/24.png"></div>
+                <div class="go"><p style="color:#2756a4;font-weight:600;font-size: 30px;font-family: "微软雅黑";">中电科仪器仪表有限公司</p></div>
+            </div>
+            <div class="dianhua">
+                <p><a href="">电话：800-8687-041</a></p>
+            </div>
+            <div class="zhongwen">
+                <ul>
+                    <li class="biaodan">
+                        <div class="lag">
+                            <p>中文</p>
+                        </div>
+                        <div class="lag2">
+                            <select>
+                                <option>
+                            Language
+                                </option>
+                            </select>
+                        </div>
+                    </li>
+                    <li class="biaodan"><a href=""><font color="black">登陆</font></a></li>
+                    <li class="biaodan1"><a href=""><font color="black">注册</font></a></li>
+                </ul>
+            </div>
+        </div>
+        <ul class="last">
+           <li class="last3"><a href=""><font color="black">首页</font></a></li>
+            <li class="last2"><a href=""><font color="white">产品中心</font></a></li>
+            <li class="last1"><a href=""><font color="black">技术支持</font></a></li>
+            <li class="last1"><a href=""><font color="black">解决方案</font></a></li>
+            <li class="last1"><a href=""><font color="black">计量和服务</font></a></li>
+            <li class="last1"><a href=""><font color="black">新闻中心</font></a></li>
+            <li class="last1"><a href=""><font color="black">访问论坛</font></a></li>
+            <li class="last1"><a href=""><font color="black">关于我们</font></a></li>
+            <li class="img1"><input type="" name="搜索" style="height: 37px;width: 254px;border:0;outline-style: none; padding-left:16px;font-size: 16px;font-family: "微软雅黑";" placeholder="搜索" id=t1></li>
+        </ul>
+
+    </div>
+
+    <div class="zhuye">
+        <div class="box1">
+            <span>主页></span>
+            <span style="color:blue"><a href="">产品中心</a></span>
+        </div>
+        <div class="box2">
+            <span style="font-size: 26px;">产品中心</span></br>
+            <span>PRODUCTS</span>
+        </div>
+        <div class="box3">
+        <img src="img/2.png">
+        </div>
+        <div class="box4">
+            <div class="zhongdian">
+                <p><a href="">中电科仪器产品</a></p>
+            </div>
+            <div class="neirong">
+                <p>中电科仪器集团致力于研发生产高新电子技术产品，主要从事微波/毫米波、光电通信、数字通信、基础通用类测量仪器以及自动测试系统、微波毫米波部件等产品的研制、开发和批量生产，并为军、民用电子元器件、整机和系统的研制、生产提供检测手段。多年来中电科仪器的各系列产品以优良的技术和品质为众多公司企业和各个机构提供了帮助。</p>
+            </div>
+        </div>
+    </div>
+    <div class="tupian">
+        <ul class="nan">
+            <li class="yes">
+                <div class="pic1">
+                <img src="img/5.png">
+                </div>
+                <p><a href="https://dongyifan2018.github.io/fff/web2/demo5-1.html">微波/毫米波测量仪器</a></p>
+                <ul class="hap">
+                    <li><a href="">信号发生器</a></li>
+                    <li><a href="">信号与频谱分析仪</a></li>
+                    <li><a href="">网络分析仪</a></li>
+                    <li><a href="">噪声系数分析仪</a></li>
+                    <li><a href="">微波功率/频率计</a></li>
+                    <li><a href="">射频与微波综合测试仪</a></li>
+                    <li><a href="">微博测试附件</a></li>
+                </ul>
+            </li>
+            <li class="yes">
+                <div class="pic1">
+                <img src="img/6.png">
+                </div>
+                <p><a href="">光电测量仪器</a></p>
+                <ul class="hap">
+                    <li><a href="">光谱分析仪</a></li>
+                    <li><a href="">光纤熔接机</a></li>
+                    <li><a href="">光时域发射计</a></li>
+                    <li><a href="">光源</a></li>
+                    <li><a href="">光功率计</a></li>
+                    <li><a href="">光衰减器</a></li>
+                    <li><a href="">红紫外激光测试</a></li>
+                </ul>
+            </li>
+            <li class="yes">
+                <div class="pic1">
+                <img src="img/7.png">
+                </div>
+                <p><a href="">通信测量仪器</a></p>
+                <ul class="hap">
+                    <li><a href="">数字通信测量仪器</a></li>
+                    <li><a href="">无线通信测量仪器</a></li>
+                    <li><a href="">广播电视网络测试仪器</a></li>
+                </ul>
+            </li>
+            <li class="no">
+                <div class="pic1">
+                <img src="img/8.png">
+                </div>
+                <p><a href="">基础测试仪器</a></p>
+                <ul class="hap">
+                    <li><a href="">数字示波器</a></li>
+                    <li><a href="">光伏仪器</a></li>
+                    <li><a href="">程控电源</a></li>
+                    <li><a href="">元器件测试</a></li>
+                </ul>
+            </li>
+            <li class="yes">
+                <div class="pic1">
+                <img src="img/9.png">
+                </div>
+                <p><a href="">微波毫米部件</a></p>
+                <ul class="hap">
+                    <li><a href="">有源部件</a></li>
+                    <li><a href="">无源部件</a></li>
+                    <li><a href="">多功能组件</a></li>
+                </ul>
+            </li>
+            <li class="yes">
+                <div class="pic1">
+                <img src="img/10.png">
+                </div>
+                <p><a href="">元器件</a></p>
+                <ul class="hap">
+                    <li><a href="">开关</a></li>
+                    <li><a href="">继电器</li>
+                    <li><a href="">连接器及电缆组件</a></li>
+                    <li><a href="">金属封装管壳</a></li>
+                    <li><a href="">汽车电子</a></li>
+                </ul>
+            </li>
+            <li class="yes">
+                <div class="pic1">
+                <img src="img/11.png">
+                </div>
+                <p><a href="">模块化仪器</a></p>
+                 <ul class="hap">
+                    <li><a href="">VXI总线测试模块</a></li>
+                    <li><a href="">USB总线测试模块</a></li>
+                    <li><a href="">PXI总线测试模块</a></li>
+                    <li><a href="">LXI总线测试模块</a></li>
+                    <li><a href="">cPIC总线测试模块</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+
+
+
+<div class="third">
+            <div class="partthree">
+                <a href=""><img src="img/19.png" alt="" class="imgfive"></a>
+                <p class="p10"><a href="" style="color:white">800-8687-041</a></p>
+                <a href=""><img src="img/20.png" alt="" class="imgsix"></a>
+                <p class="p11"><a href="" style="color:white">中电仪器技术论坛</a></p>
+                <p class="p12">其他链接：</p>
+                <a href=""><img src="img/21.png" alt="" class="imgseven"></a>
+                <a href=""><img src="img/22.png" alt="" class="imgeight"></a>
+                <a href=""><img src="img/23.png" alt="" class="imgnine"></a>
+            </div>
+        </div>
+
+
+<div class="g">
+        <div class="h">
+            <div class="l">
+                <ul>
+                    <p>关于中电仪器</p>
+                    <li>新闻中心</a></li>
+                    <li>公司简介</li>
+                    <li>工作机会</li>
+                </ul>
+                <ul>
+                    <p>采购指南</p>
+                    <li>如何购买</li>
+                    <li>索取报价</li>
+                    <li>查看特价优惠</li>
+                    <li>代理合作</li>
+                </ul>
+                <ul>
+                    <p>技术支持</p>
+                    <li>查找手册</li>
+                    <li>更新固化软件/软件</li>
+                    <li>访问论坛</li>
+                    <li>联系我们</li>
+                </ul>
+                <ul>
+                    <p>计量和服务</p>
+                    <li>计量校准</li>
+                    <li>仪器维修</li>
+                    <li>培训与教育</li>
+                </ul>
+                <ul>
+                    <p>公司链接</p>
+                    <li>中国电科第41所</li>
+                    <li>中国电科第40所</li>
+                    <li>依爱消防</li>
+                    <li>依爱通信</li>
+                    <li>兴仪电子</li>
+                </ul>
+            </div>
+            <div class="linelast">
+            </div>
+            <div class="m">
+                <img src="img/13.png" alt="" class="image3">
+                <p>中科电仪器仪表有限公司</p>
+                <p>青岛：地址：山东省青岛市黄岛区香江路98号</p>
+                <p style="margin-left:42.5px;">邮箱：eiqd@ei41.com</p>
+                <p>蚌埠：地址：安徽省蚌埠市华光大道726号</p>
+                <p style="margin-left:42.5px;">邮箱：eibb@ei41.com</p>
+            </div>
+            <div class="n">
+            <p style="margin-left: 105px;">www.cetcei.com 
+
+ 中电科仪器仪表有限公司</p>
+            <p style="margin-left:165px;">《中华人民共和国电信与信息服务业务经营许可证》编号：皖ICP备05003230</p>
+            <p style="margin-left:50px;">法律说明</p>
+            <div class="zuihouline">
+            </div>
+            <p style="margin-left:10px;">网站直播</p>
+            </div>
+        </div>
+    </div>
+
+
+<div class="zai">
+    <div class="you1">
+        <div class="wan1"><a href=""><img src="img/14.png"></a></div>
+        <div class="wan2"><a href="" style="color:white">在线交流</a></div>
+    </div>
+    <div class="you2">
+        <div class="wan1"><a href=""><img src="img/15.png"></a></div>
+        <div class="wan2"><a href="" style="color:white">联系电话</a></div>
+        <div class="wan3"><img src="img/16.png"></div>
+    </div>
+    <div class="you3">
+        <div class="wan1"><a href=""><img src="img/17.png"></a></div>
+        <div class="wan2"><a href="" style="color:white">关注微信</a></div>
+        <div class="wan3"><img src="img/16.png"></div>
+    </div>
+    <div class="you4">
+        <div class="wan4"><a href=""><img src="img/18.png"></a></div>
+    </div>
+    <div class="you5">
+        <div class="wan5"><a href="" style="color:#dad6d6;font-size:8px;"">BACK TO TOP</a></div>
+    </div>
+</div>
+
+
+
+</body>
+</html>
