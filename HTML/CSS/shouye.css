@@ -9,7 +9,6 @@ a{
 }
 .Big{
 	width: 100%;
-	background-color: #f9f9f9;
 }
 .top{
 	width: 1200px;
@@ -94,6 +93,7 @@ select{
 .mid{
 	width:1200px;
 	height:205px;
+	background-color:#f9f9f9;
 	margin: 0 auto;
 }
 .midimg{
@@ -101,34 +101,75 @@ select{
 	margin-top: 45px;
 }
 .div1{
+	height: 590px;
 	width: 1200px;
-	height: 1000px;
 	margin: 0 auto;
-    background-color: #f9f9f9;
+	 
 }
 .div11{
-	width: 300px;
-	height:480px;
-	border:1px solid white;
+	height: 100px;
+	width: 1200px;
 	float: left;
-	background-color: white;
+}
+.nav{
+	height: 100px;
+	width: 1200px;
+}
+.div12{
+	height: 490px;
+	width: 1200px;
+	float: left;
+}
+.div1pb{
+	font-size: 22px;
+	margin-top: 75px;
+	margin-bottom: 70px;
+	line-height: 37px;
+	letter-spacing: 2px;
+}
+.div1pl{
+	font-size: 14px;
+	text-indent: 28px;/*首行空格*/
+	line-height: 26px;/*行高*/
+	letter-spacing: 1.5px;/*字间距*/
+}
+.div2{
+	width: 1200px;
+	height: 378px;
+	margin: 0 auto;
+	border-top: 2px solid #949494;
+}
+.div2pb{
+	font-size: 22px;
+	color: #2756a4;
+	margin-top: 30px;
+	margin-left:25px;
+}
+.div2pl{
+	font-size: 14px;
+	color: #434343;
+	margin-left: 25px;
+	line-height: 29px;
+}
+.div3{
+	width: 1200px;
+	height: 755px;
+	margin: 0 auto;
 }
 .foot{
 	width: 100%;
 	height:60px;
 	background-color: #0b4199;
-	
 }
 .foot1{
 	width: 1200px;
 	height: 60px;
 	margin: 0 auto;
-	background-color: #0b4199;
-	text-align: center;
 }
 .last1 {
 	height: 342px;
 	width: 100%;
 	background-color: #454545;
 	margin: 0 auto;
+	float: left;
 }
