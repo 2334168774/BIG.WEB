@@ -1,0 +1,190 @@
+*{
+	margin:0px;padding:0px;
+}
+ul,li,ol{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+*{
+	margin:0px;padding:0px;
+}
+ul,li,ol{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+.container{
+		width:100%;
+		height:2165px;
+		background-color:#f9f9f9;
+}
+.top{
+	width:1200px;
+	height:105px;
+	margin: 0 auto;
+	background-color:#ffffff;
+}
+.logo{
+	float:left;
+}
+.a{
+	font-size:30px;
+	font-style:"微软雅黑";
+	color:#0b4199;
+	float:left;
+	margin-left:20px;
+	margin-top:48px;
+}
+.p2{
+	margin-left:110px;
+	font-size:22px;
+	font-style:"微软雅黑";
+	color:#0b4199;
+}
+.word{
+	float:left;
+	margin-left:60px;
+	margin-top:40px;
+	background-color:white;
+	font-size:16px;
+}
+.zhongwen{
+	float:left;
+}
+.l{
+	color:red;
+	float:left;
+	margin-left:25px;
+}
+.last{
+	width:2px;
+	height:18px;
+	background-color:black;
+	float:left;
+	margin-left:20px;
+}
+.chaolianjie{
+	float:left;	
+}
+.b{
+	width:1220px;
+	height:50px;
+	margin:0 auto;
+}
+.shouye{
+	float:left;
+	font-size:16px;
+	font-style:'微软雅黑';
+	margin-top:9px;
+}
+.jilianghefuwu{
+	width:100px;
+	height:30px;
+	background-color:blue;
+	margin-left:50px;
+	float:left;
+	margin-top:105px;
+	margin-top:0px;
+}
+.p5{
+	text-align:center;
+	font-size:16px;
+	font-style:'微软雅黑';
+	padding-top:10px;color:white;
+}
+.form{
+	margin-right:20px;
+}
+.form>* {outline: 0;}
+.form input {
+	float: left;
+	font-size: 12px;
+	height: 31px;
+	width: 200px;
+	text-indent: 8px;
+	border: 1px solid #e2e2e2;
+	background-color:#e2e2e2;
+}
+.form button {
+	height: 33px;
+	width: 30px;
+	border: 0;
+}
+.mid{
+	width:1200px;
+	height:205px;
+	background-color:#f9f9f9;
+}
+.zuo{
+	float:left;
+}
+.di{
+	margin-top:110px;
+}
+.emc1{
+	font-size:24px;
+}
+.emc2{
+	font-size:14px;
+}
+.line{
+	margin-top:15px;
+	border: 1px dashed #e2e2e2;
+}
+.dianzi{
+	background-color:#f9f9f9;
+}
+.bigtu{
+	background-color:#ffffff;
+	width:1200px;
+	height:570px;
+	margin-top:20px;
+	float:left;
+}
+.tupian1{
+	float:left;
+}
+.tupian2{
+	float:right;
+}
+
+
+
+.father{
+	width: 100%;
+	margin-top:70px;
+}
+.foot{
+	margin-top:600px;
+	height:60px;
+	width: 1200px;
+	text-align: center;
+	background-color:#0b4199;
+}
+.list {
+	height:60px;
+	width: 1200px;
+	float: left;
+	text-align: center;
+	margin-top: 83px;
+}
+.list ul {
+	display: inline-block;
+}
+.list li {
+	float: left;
+	border-right: 1px solid #fff;
+	padding: 0 10px;
+	font-size: 14px;
+	color: #fff;
+}
+.last1 {
+	height: 342px;
+	width: 1200px;
+	background-color: #454545;
+	margin: 0 auto;
+	float: left;
+}
